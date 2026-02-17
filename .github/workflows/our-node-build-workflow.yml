@@ -1,0 +1,11 @@
+name: Node
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  ci:
+    name: Deployment
+    uses: TrustAfrica/GHA.workflows/.github/workflows/gha.workflows.build-node.yml
