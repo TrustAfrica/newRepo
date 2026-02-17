@@ -1,4 +1,4 @@
-name: Node
+name: Node.js CI workflow
 on:
   workflow_dispatch:
   push:
@@ -8,4 +8,4 @@ on:
 jobs:
   ci:
     name: Deployment
-    uses: TrustAfrica/GHA.workflows/.github/workflows/gha.workflows.build-node.yml
+    uses: TrustAfrica/GHA.workflows/.github/workflows/gha.workflows.build-node.yml@main
